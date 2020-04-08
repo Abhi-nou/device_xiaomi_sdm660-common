@@ -470,3 +470,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
+
+# G-Apps
+$(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
