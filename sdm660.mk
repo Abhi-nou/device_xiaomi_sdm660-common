@@ -26,7 +26,9 @@ $(call inherit-product, $(LOCAL_PATH)/properties.mk)
 PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Dirac
+ifeq ($(ENABLE_DIRAC), true)
 $(call inherit-product, vendor/dirac/dirac.mk)
+endif
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
